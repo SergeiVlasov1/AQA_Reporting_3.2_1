@@ -9,16 +9,15 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.Keys;
 
-import ru.netology.data.DataGenerator;
+import data.DataGenerator;
 
 import java.time.Duration;
 
 import static com.codeborne.selenide.Condition.exactText;
-import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.Selenide.$;
-import static ru.netology.data.DataGenerator.getIrrelevantDate;
+import static data.DataGenerator.getIrrelevantDate;
 
 public class CardDeliveryOrderWithNewDateTest {
     DataGenerator.UserInfo user = DataGenerator.Registration.generateUser("ru");
